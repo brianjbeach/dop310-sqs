@@ -34,7 +34,7 @@ jobs:
         aws-region: us-west-2
         change-set-name: test
     - name: Deploy CloudFormation Template
-      uses: aws-actions/aws-cloudformation-github-deploy@master
+      uses: aws-actions/aws-cloudformation-github-deploy@v1.1.0
       with:
         name: sqs
         template: sqs.yaml
