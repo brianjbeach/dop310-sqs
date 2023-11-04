@@ -33,9 +33,7 @@ jobs:
         role-to-assume: arn:aws:iam::208362219457:role/GitHub
         aws-region: us-west-2
     - name: Deploy CloudFormation Template
-      id: eks-cluster
       uses: aws-actions/aws-cloudformation-github-deploy@master
       with:
-        name: SQS
+        name: sqs
         template: sqs.yaml
-        no-fail-on-empty-changeset: "1"
