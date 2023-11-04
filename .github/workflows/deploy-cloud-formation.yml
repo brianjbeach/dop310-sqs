@@ -37,3 +37,4 @@ jobs:
       with:
         name: sqs
         template: sqs.yaml
+        no-fail-on-empty-changeset: "1"
