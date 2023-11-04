@@ -32,7 +32,6 @@ jobs:
       with:
         role-to-assume: arn:aws:iam::208362219457:role/GitHub
         aws-region: us-west-2
-        change-set-name: test
     - name: Deploy CloudFormation Template
       uses: aws-actions/aws-cloudformation-github-deploy@v1.1.0
       with:
